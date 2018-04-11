@@ -28,6 +28,14 @@ public class ParkingLot {
 		return parkedCars.remove(token);
 	}
 
+	public int getParkingSpace() {
+		return parkingSpace;
+	}
+
+	public void setParkingSpace(int parkingSpace) {
+		this.parkingSpace = parkingSpace;
+	}
+
 	public int showParkingSpace() {
 		return parkingSpace - parkedCars.size();
 	}
